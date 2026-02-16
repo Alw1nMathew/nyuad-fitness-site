@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>NYUAD Fitness Center</title>
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>NYUAD FITNESS CENTER</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                <li><a href="#timings" class="nav-link">Timings</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="section-container">
+                <h1 class="section-title">Welcome to NYUAD Fitness Center</h1>
+                <p class="section-subtitle">Your Journey to a Healthier and Stronger you begins here!!</p>
+                
+                <!-- Video Showcase with Google Drive Embeds -->
+                <div class="video-showcase">
+                    <div class="video-card featured">
+                        <h3><i class="fas fa-video"></i> Mixed Gym</h3>
+                        <div class="video-wrapper">
+                            <!-- REPLACE THE VIDEO ID BELOW WITH YOUR MIXED GYM VIDEO ID -->
+                            <iframe src="https://drive.google.com/file/d/1vACiSo8sUBCkUDiHxAYAXsqObwEwDjDN/preview" 
+                                    width="100%" 
+                                    height="100%" 
+                                    frameborder="0" 
+                                    scrolling="no" 
+                                    allowfullscreen="true"
+                                    title="Mixed Gym Video">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <h3><i class="fas fa-female"></i> Women's Only Gym</h3>
+                        <div class="video-wrapper">
+                            <!-- REPLACE THE VIDEO ID BELOW WITH YOUR WOMEN'S GYM VIDEO ID -->
+                            <iframe src="https://drive.google.com/file/d/14iDxqwAkL7xuMn5OHtNXP9AqWzyvVOh1/preview" 
+                                    width="100%" 
+                                    height="100%" 
+                                    frameborder="0" 
+                                    scrolling="no" 
+                                    allowfullscreen="true"
+                                    title="Women's Only Gym Video">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats / Interactive Counter -->
+                <div class="stats-container">
+                    <div class="stat-item" id="stat1">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="300">0</span>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <span class="stat-label">Daily Members</span>
+                    </div>
+                    <div class="stat-item" id="stat2">
+                        <i class="fas fa-dumbbell"></i>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <span class="stat-label">Equipment</span>
+                    </div>
+                    <div class="stat-item" id="stat3">
+                        <i class="fas fa-calendar-check"></i>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="7">0</span>
+                        </div>
+                        <span class="stat-label">Days Open</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="facilities" class="section facilities-section">
+            <div class="section-container">
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="section-subtitle">Explore our state-of-the-art equipment and spaces</p>
+                
+                <!-- Interactive Facility Grid -->
+                <div class="facilities-grid">
+                    <!-- Card 1 - Cardio Zone -->
+                    <div class="facility-card" data-facility="cardio">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="fas fa-heartbeat"></i>
+                                <h3>Cardio Zone</h3>
+                                <p>Hover to flip →</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Equipment:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Treadmills (8)</li>
+                                    <li><i class="fas fa-check"></i> Ellipticals (6)</li>
+                                    <li><i class="fas fa-check"></i> Rowers (4)</li>
+                                    <li><i class="fas fa-check"></i> Spin Bikes (10)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Strength Area -->
+                    <div class="facility-card" data-facility="strength">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="fas fa-dumbbell"></i>
+                                <h3>Strength Area</h3>
+                                <p>Hover to flip →</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Equipment:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Free Weights</li>
+                                    <li><i class="fas fa-check"></i> Squat Racks (4)</li>
+                                    <li><i class="fas fa-check"></i> Bench Press (3)</li>
+                                    <li><i class="fas fa-check"></i> Cable Machines</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Women's Only Gym -->
+                    <div class="facility-card" data-facility="womens">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="fas fa-female"></i>
+                                <h3>Women's Gym</h3>
+                                <p>Hover to flip →</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Features:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Private Space</li>
+                                    <li><i class="fas fa-check"></i> Female Trainers</li>
+                                    <li><i class="fas fa-check"></i> Full Equipment</li>
+                                    <li><i class="fas fa-check"></i> Yoga Area</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - Functional Turf -->
+                    <div class="facility-card" data-facility="turf">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="fas fa-bolt"></i>
+                                <h3>Functional Turf</h3>
+                                <p>Hover to flip →</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Equipment:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Sleds (2)</li>
+                                    <li><i class="fas fa-check"></i> Battle Ropes</li>
+                                    <li><i class="fas fa-check"></i> Agility Ladders</li>
+                                    <li><i class="fas fa-check"></i> Plyo Boxes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 - Locker Rooms -->
+                    <div class="facility-card" data-facility="lockers">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="fas fa-archive"></i>
+                                <h3>Locker Rooms</h3>
+                                <p>Hover to flip →</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Amenities:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Showers</li>
+                                    <li><i class="fas fa-check"></i> Sauna</li>
+                                    <li><i class="fas fa-check"></i> Lockers</li>
+                                    <li><i class="fas fa-check"></i> Changing Areas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 - Yoga/Stretch -->
+                    <div class="facility-card" data-facility="yoga">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="fas fa-om"></i>
+                                <h3>Yoga & Stretch</h3>
+                                <p>Hover to flip →</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Yoga Mats</li>
+                                    <li><i class="fas fa-check"></i> Foam Rollers</li>
+                                    <li><i class="fas fa-check"></i> Stretch Bands</li>
+                                    <li><i class="fas fa-check"></i> Quiet Zone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timings Section -->
+        <section id="timings" class="section timings-section">
+            <div class="section-container">
+                <h2 class="section-title">Opening Hours</h2>
+                <p class="section-subtitle">Plan your visit with our weekly schedule</p>
+                
+                <!-- Interactive Schedule -->
+                <div class="schedule-container">
+                    <!-- Day selector tabs -->
+                    <div class="day-tabs">
+                        <button class="day-tab active" data-day="mon">Mon</button>
+                        <button class="day-tab" data-day="tue">Tue</button>
+                        <button class="day-tab" data-day="wed">Wed</button>
+                        <button class="day-tab" data-day="thu">Thu</button>
+                        <button class="day-tab" data-day="fri">Fri</button>
+                        <button class="day-tab" data-day="sat">Sat</button>
+                        <button class="day-tab" data-day="sun">Sun</button>
+                    </div>
+
+                    <!-- Schedule display -->
+                    <div class="schedule-display">
+                        <!-- Monday -->
+                        <div class="day-schedule active" id="mon-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tuesday -->
+                        <div class="day-schedule" id="tue-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wednesday -->
+                        <div class="day-schedule" id="wed-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thursday -->
+                        <div class="day-schedule" id="thu-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Friday -->
+                        <div class="day-schedule" id="fri-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>6:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Saturday -->
+                        <div class="day-schedule" id="sat-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sunday -->
+                        <div class="day-schedule" id="sun-schedule">
+                            <div class="time-slot mixed-gym">
+                                <i class="fas fa-dumbbell"></i>
+                                <div class="time-details">
+                                    <h4>Mixed Gym</h4>
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="time-slot womens-gym">
+                                <i class="fas fa-female"></i>
+                                <div class="time-details">
+                                    <h4>Women's Only Gym</h4>
+                                    <p>8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to help with any questions</p>
+                
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>First Floor, NYU Abu Dhabi Campus Center<br>Saadiyat Island, Abu Dhabi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+971-2-628-4283</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>nyuad.fitness@nyu.edu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Front Desk Hours</h4>
+                                <p>Mon-Fri: 6am - 10pm<br>Sat-Sun: 8am - 8pm</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="social-links">
+                            <a href="https://instagram.com/nyuadfitness" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/nyuadfitness" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="https://linkedin.com/company/nyuad-fitness" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="inquiry" required>
+                                    <option value="" disabled selected>Select Inquiry Type</option>
+                                    <option value="membership">Membership</option>
+                                    <option value="facilities">Facilities</option>
+                                    <option value="timings">Timings</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 NYU Abu Dhabi Fitness Center. All rights reserved.</p>
+            <p>Part of the NYUAD Campus Community</p>
+        </div>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js?v=3.0"></script>
+</body>
+</html>
